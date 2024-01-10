@@ -19,6 +19,9 @@ import threedotspic from "../src/Assets/images/threedotspic.png";
 import logos from "../src/Assets/images/logos.png";
 import Social from "../src/Assets/images/Social.png";
 import Googleplay from "../src/Assets/images/Googleplay.png";
+import subscribesection from "../src/Assets/images/subscribesection.png";
+import PlayStore from "../src/Assets/images/PlayStore.png";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -151,7 +154,7 @@ function App() {
             <p>Easy and Fast</p>
           </div>
           <div className="">
-            <h1 className="text-5xl font-semibold ">
+            <h1 className="text-5xl font-semibold font-volk">
               Book Your Next Trip <br></br>In 3 Easy Steps
             </h1>
           </div>
@@ -216,64 +219,53 @@ function App() {
           <img src={logos} alt="logos" />
         </div>
       </div>
-      <div className="flex w-full flex-col gap-24">
-        <div className="flex gap-5 flex-col">
-          <div className="flex justify-center">
-            <h1 className="text-4xl ">
-              Subscribe to get information, latest news and other
-            </h1>
-          </div>
-          <div className="flex justify-center">
-            <h1 className="text-4xl ">interesting offers about Cobham</h1>
-          </div>
-        </div>
-        <div className="flex w-full justify-center gap-7">
-          <div className="flex items-center justify-center">
-            <fieldset className="flex items-center justify-center border text-center">
-              <input type="email" placeholder="You email" aria-label="email" />
-            </fieldset>
-          </div>
-          <button className=" bg-orange-600 border w-40 h-10 rounded">
-            Subscribe
-          </button>
+      <div className="flex w-full flex-col gap-16">
+        <div className="flex justify-center">
+          <img src={subscribesection} alt="subscribesection" />
         </div>
       </div>
-      <div className="flex w-full gap-52">
-        <div className="flex flex-col">
-          <h1>Jadoo.</h1>
+      <div className="flex w-full justify-between mt-20">
+        <div className="flex flex-col w-40 gap-5">
+          <h1 className="font-semibold text-3xl">Jadoo.</h1>
           <p>
-            Book your trip in minute, get<br></br> full Control for much longer.
+            Book your trip in minute, get full<br></br> Control for much longer.
           </p>
         </div>
-        <div className="flex flex-col">
-          <h1>Company</h1>
+        <div className="flex flex-col w-40 gap-4 ">
+          <h1 className="font-semibold text-2xl">Company</h1>
           <p>About</p>
           <p>Careesr</p>
           <p>Mobile</p>
         </div>
-        <div className="flex flex-col">
-          <h1>Contact</h1>
+        <div className="flex flex-col w-40 gap-4 ">
+          <h1
+            style={{ fontFamily: "'Poppins', sans-serif" }}
+            className="font-semibold text-2xl font-poppins"
+          >
+            Contact
+          </h1>
           <p>Help/FAQ</p>
           <p>Press</p>
           <p>Affilates</p>
         </div>
-        <div className="flex flex-col">
-          <h1>More</h1>
+        <div className="flex flex-col w-40 gap-4  ">
+          <h1 className="font-semibold text-2xl">More</h1>
           <p>Airlinefees</p>
           <p>Airline</p>
           <p>Low fare tips</p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-4 ">
           <div>
             <img src={Social} alt="Social" />
             <h1>Discover our app</h1>
           </div>
-          <div>
+          <div className="flex gap-2">
             <img src={Googleplay} alt="Googleplay" />
+            <img src={PlayStore} alt="PlayStore" />
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center">
+      <div className="flex w-full justify-center mt-32">
         <p>All rights reserved@jadoo.co</p>
       </div>
     </>
