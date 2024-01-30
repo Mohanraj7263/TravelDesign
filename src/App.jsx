@@ -21,32 +21,11 @@ import Social from "../src/Assets/images/Social.png";
 import Googleplay from "../src/Assets/images/Googleplay.png";
 import subscribesection from "../src/Assets/images/subscribesection.png";
 import PlayStore from "../src/Assets/images/PlayStore.png";
-
+import Header from "./Components/Header/Header";
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div className="flex w-full justify-between">
-        <div className=" flex  w-2/5 text-4xl font-bold">
-          <h1>Jodoo</h1>
-        </div>
-        <div
-          className="flex  w-2/5 justify-between gap-6 items-center
-        "
-        >
-          <ul>Desitinations</ul>
-          <ul>Hotels</ul>
-          <ul>Flights</ul>
-          <ul>Bookings</ul>
-          <ul>Login</ul>
-        </div>
-        <div className="flex  w-1/5 justify-center ">
-          <button className="w-24 h-10 rounded-sm border-2 border-black">
-            Signup
-          </button>
-        </div>
-      </div>
+      <Header />
       <div className="flex w-full">
         <div className="flex flex-col w-2/4 justify-between gap-x-2 mt-28">
           <div>
